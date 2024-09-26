@@ -1,21 +1,18 @@
-# Calculadora de Préstamos Hipotecarios
+# Calculadora de Préstamos
 
-Este proyecto es una **Calculadora de Préstamos Hipotecarios** desarrollada en HTML, CSS y JavaScript, con un enfoque especial en la experiencia de usuario y la interfaz visual. La herramienta permite calcular el monto mensual de pago y el total a pagar, basado en la cantidad del préstamo, la duración y la tasa de interés.
+Este proyecto es una **Calculadora de Préstamos** desarrollada en HTML, CSS y JavaScript, con un enfoque especial en la experiencia de usuario y la interfaz visual. La herramienta permite calcular el monto mensual de pago y el total a pagar, basado en la cantidad del préstamo, la duración y la tasa de interés.
 
 ## Tabla de Contenidos
 
 - [Descripción](#descripción)
 - [Características](#características)
 - [Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Instalación](#instalación)
 - [Uso](#uso)
-- [Contribuciones](#contribuciones)
 - [Contacto](#contacto)
 
 ## Descripción
 
-La Calculadora de Préstamos Hipotecarios permite a los usuarios introducir la cantidad del préstamo, la duración en años y la tasa de interés para calcular la cuota mensual y el repago total. Además, ofrece dos modalidades de cálculo: **Préstamo con Capital** y **Solo Interés**. Esta herramienta es ideal para personas que desean evaluar su capacidad de pago antes de solicitar un préstamo hipotecario.
+La Calculadora de Préstamos permite a los usuarios introducir la cantidad del préstamo, la duración en años y la tasa de interés para calcular la cuota mensual y el repago total. Además, ofrece dos modalidades de cálculo: **Préstamo con Capital** y **Solo Interés**. Esta herramienta es ideal para personas que desean evaluar su capacidad de pago antes de solicitar un préstamo.
 
 ## Características
 
