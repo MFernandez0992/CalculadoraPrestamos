@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
@@ -13,140 +13,117 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
 
   </style>
 </head>
-<body class="text-base font-Jakarta bg-slate100 flex md:min-h-screen md:items-center md:justify-center">
+  <body class="text-base font-Jakarta bg-slate100 flex md:min-h-screen md:items-center md:justify-center">
 
-  <div class="md:bg-white flex flex-col md:flex-row justify-center rounded-3xl w-full md:w-[1200px] md:h-[650px]">
-    <section class="md:w-1/2 p-8 flex flex-col justify-center gap-8 bg-white">
-      <div class="flex items-baseline justify-between">
-        <h1 class="text-firefly font-bold text-2xl">Calcular Préstamo</h1>
-      
-        <a class="text-slate700 font-medium underline cursor-pointer" id="reset">Resetear</a>
-      </div>    
-
-      <form action="" class="flex flex-col gap-6">
-        <div class="flex flex-col gap-2">
-          <label class="text-slate700 font-medium">Monto</label>
-          <div class="flex items-center border border-slate300 rounded-md overflow-hidden">
-            <span class="bg-slate900 text-white px-4 py-2 font-bold">$</span>
-            <input id="mortgageAmount" 
-                   class="flex-1 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                   type="text" 
-                   placeholder="Monto del Préstamo">
-          </div>
-          <p class="text-red hidden" id="error-mortgageAmount"></p>
-        </div>
+    <div class="md:bg-white flex flex-col md:flex-row justify-center rounded-3xl w-full md:w-[1200px] md:h-[650px]">
+      <section class="md:w-1/2 p-8 flex flex-col justify-center gap-8 bg-white">
+        <div class="flex items-baseline justify-between">
+          <h1 class="text-firefly font-bold text-2xl">Calcular Préstamo</h1>
         
-        <div class="flex gap-4">
-          <div class="w-1/2 flex flex-col gap-2">
-            <label class="text-slate700 font-medium" for="">Duración</label>
+          <a class="text-slate700 font-medium underline cursor-pointer" id="reset">Resetear</a>
+        </div>    
+
+        <form action="" class="flex flex-col gap-6">
+          <div class="flex flex-col gap-2">
+            <label class="text-slate700 font-medium">Monto</label>
             <div class="flex items-center border border-slate300 rounded-md overflow-hidden">
-              <span class="bg-slate900 text-white px-4 py-2 font-bold">Meses</span>
-              <input id="mortgageTerm" 
-                     class="flex-1 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                     type="text" 
-                     placeholder="Duración">
+              <span class="bg-slate900 text-white px-4 py-2 font-bold">$</span>
+              <input id="mortgageAmount" 
+                    class="flex-1 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    type="text" 
+                    placeholder="Monto del Préstamo">
             </div>
-            <p class="text-red hidden" id="error-mortgageTerm"></p>
+            <p class="text-red hidden" id="error-mortgageAmount"></p>
           </div>
-        
-          <div class="w-1/2 flex flex-col gap-2">
-            <label class="text-slate700 font-medium" for="">Tasa de Interés</label>
-            <div class="flex items-center border border-slate300 rounded-md overflow-hidden">
-              <span class="bg-slate900 text-white px-4 py-2 font-bold">%</span>
-              <input id="interestRate" 
-                     class="flex-1 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                     type="text" 
-                     placeholder="Tasa de Interés">
+          
+          <div class="flex gap-4">
+            <div class="w-1/2 flex flex-col gap-2">
+              <label class="text-slate700 font-medium" for="">Duración</label>
+              <div class="flex items-center border border-slate300 rounded-md overflow-hidden">
+                <span class="bg-slate900 text-white px-4 py-2 font-bold">Meses</span>
+                <input id="mortgageTerm" 
+                      class="flex-1 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      type="text" 
+                      placeholder="Duración">
+              </div>
+              <p class="text-red hidden" id="error-mortgageTerm"></p>
             </div>
-            <p class="text-red hidden" id="error-interestRate"></p>
-          </div>
-        </div>
-        
-        
-        <!-- <div class="flex flex-col gap-2">
-          <label class="text-slate700 font-medium">Monto</label>
-          <input id="mortgageAmount" class="rounded-md border-slate300 border-[1.5px] p-2 w-full" type="text">
-        </div>
-
-        <div class="flex gap-4">
-          <div class="w-1/2 flex flex-col gap-2">
-            <label class="text-slate700 font-medium" for="">Duración</label>
-            <input id="mortgageTerm" class="rounded-md border-slate300 border-[1.5px] p-2 w-full" type="text">
-          </div>
           
-          <div class="w-1/2 flex flex-col gap-2">
-            <label class="text-slate700 font-medium" for="">Tasa de Interés</label>
-            <input id="interestRate" class="rounded-md border-slate300 border-[1.5px] p-2 w-full" type="text">
+            <div class="w-1/2 flex flex-col gap-2">
+              <label class="text-slate700 font-medium" for="">Tasa de Interés</label>
+              <div class="flex items-center border border-slate300 rounded-md overflow-hidden">
+                <span class="bg-slate900 text-white px-4 py-2 font-bold">%</span>
+                <input id="interestRate" 
+                      class="flex-1 p-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      type="text" 
+                      placeholder="Tasa de Interés">
+              </div>
+              <p class="text-red hidden" id="error-interestRate"></p>
+            </div>
           </div>
-        </div> -->
 
-        <div class="w-full flex flex-col gap-2">
-          <label class="text-slate700 font-medium" for="">Mostrar solo:</label>
-                    
-          <div class="flex items-center gap-4 px-6 rounded-md border-slate300 border-[1.5px] p-2">
-            <input type="radio" id="repayment" name="mortgageType" value="repayment"  checked />
-            <label for="repayment" class="text-firefly text-xl font-bold">Repago</label>
-          </div>          
-          
-          <div class="flex items-center gap-4 px-6 rounded-md border-slate300 border-[1.5px] p-2">
-            <input type="radio" id="interestOnly" name="mortgageType" value="interestOnly"/>
-            <label for="interestOnly" class="text-firefly text-xl font-bold">Intereses</label>
+          <div class="w-full flex flex-col gap-2">
+            <label class="text-slate700 font-medium" for="">Mostrar solo:</label>
+                      
+            <div class="flex items-center gap-4 px-6 rounded-md border-slate300 border-[1.5px] p-2">
+              <input type="radio" id="repayment" name="mortgageType" value="repayment"  checked />
+              <label for="repayment" class="text-firefly text-xl font-bold">Repago</label>
+            </div>          
+            
+            <div class="flex items-center gap-4 px-6 rounded-md border-slate300 border-[1.5px] p-2">
+              <input type="radio" id="interestOnly" name="mortgageType" value="interestOnly"/>
+              <label for="interestOnly" class="text-firefly text-xl font-bold">Intereses</label>
+            </div>
+            
           </div>
-          
+          <div class="w-full flex flex-col gap-2">
+            <button type="submit" class="bg-lime flex items-center gap-2 justify-center rounded-full p-3 w-9/12 font-bold text-xl text-firefly"><img src="assets/images/icon-calculator.svg"> Calcular Préstamo</button>
+            <p id="errorMessage" class="text-red-500 hidden text-center"></p>
         </div>
-        <div class="w-full flex flex-col gap-2">
-          <button type="submit" class="bg-lime flex items-center gap-2 justify-center rounded-full p-3 w-9/12 font-bold text-xl text-firefly"><img src="assets/images/icon-calculator.svg"> Calcular Préstamo</button>
-          <p id="errorMessage" class="text-red-500 hidden text-center"></p>
-      </div>
-      </form>
-    </section>
+        </form>
+      </section>
 
-    <section class="md:w-1/2 bg-slate900 p-8 rounded-bl-[80px] flex flex-col justify-center">
-      <!-- Empty results start -->
-    
-      <div id="emptyInfo" class="flex flex-col p-8 justify-center items-center gap-6">
-        <img src="assets/images/illustration-empty.svg" class="w-5/12" alt="">
-        <h2 class="text-white text-center text-3xl font-bold">Aquí se mostrará el resúmen de su préstamo</h2>
-        <p class="text-slate500 text-center text-lg font-medium">Complete el formulario y haga clic en "Calcular préstamo" para ver cuáles serían sus pagos mensuales.</p>
-      </div>
+      <section class="md:w-1/2 bg-slate900 p-8 rounded-bl-[80px] flex flex-col justify-center">
+        <!-- Empty results start -->
       
-      <!-- Empty results end -->
+        <div id="emptyInfo" class="flex flex-col p-8 justify-center items-center gap-6">
+          <img src="assets/images/illustration-empty.svg" class="w-5/12" alt="">
+          <h2 class="text-white text-center text-3xl font-bold">Aquí se mostrará el resúmen de su préstamo</h2>
+          <p class="text-slate500 text-center text-lg font-medium">Complete el formulario y haga clic en "Calcular préstamo" para ver cuáles serían sus pagos mensuales.</p>
+        </div>
+        
+        <!-- Empty results end -->
+      
+        <!-- Completed results start -->
+
+        <div id="resultsInfo" class="hidden flex-col gap-8">
+
+          <div>
+            <h2 class="text-white text-2xl font-bold">Resumen de Préstamo</h2>
     
-      <!-- Completed results start -->
-
-      <div id="resultsInfo" class="hidden flex-col gap-8">
-
-        <div>
-          <h2 class="text-white text-2xl font-bold">Resumen de Préstamo</h2>
-  
-          <p class="text-slate500 font-medium mt-4">Los resultados se muestran a continuación en función de la información que proporcionó. Para ajustar los resultados, edite el formulario y calcule el préstamo nuevamente.</p>
-        </div>
-
-        <div class="bg-firefly p-8 rounded-lg flex flex-col gap-12">
-          <div class="flex flex-col gap-3">
-            <p class="text-slate500 font-medium" id="monthlyText"></p>
-            <span id="monthly" class="text-lime text-5xl font-bold"></span>
+            <p class="text-slate500 font-medium mt-4">Los resultados se muestran a continuación en función de la información que proporcionó. Para ajustar los resultados, edite el formulario y calcule el préstamo nuevamente.</p>
           </div>
 
-          <div class=" flex flex-col gap-3">
-            <p class="text-slate500 font-medium" id="totalText"></p>
-            <span id="total" class="text-white text-2xl font-bold"></span>
+          <div class="bg-firefly p-8 rounded-lg flex flex-col gap-12">
+            <div class="flex flex-col gap-3">
+              <p class="text-slate500 font-medium" id="monthlyText"></p>
+              <span id="monthly" class="text-lime text-5xl font-bold"></span>
+            </div>
+
+            <div class=" flex flex-col gap-3">
+              <p class="text-slate500 font-medium" id="totalText"></p>
+              <span id="total" class="text-white text-2xl font-bold"></span>
+            </div>
+
           </div>
-
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <script src="js/app.js"></script>
-</body>
-<div class="attribution hidden">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-  Coded by <a href="#">Your Name Here</a>.
-</div>
+    <script src="js/app.js"></script>
+  </body>
 </html>
